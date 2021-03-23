@@ -15,12 +15,9 @@ function camera_factory.newCamera()
 	end
 
 	function camera:set()
-		-- self.position.x = love.graphics.getWidth() / 2
-		-- self.position.y = love.graphics.getHeight() / 2
 		love.graphics.push()
 		love.graphics.rotate(-self.angle)
 		love.graphics.scale(1 / self.scale.x, 1 / self.scale.y)
-		-- love.graphics.translate(-self.position.x + 50, -self.position.y + 50)
 		love.graphics.translate(-self.position.x + love.graphics.getWidth() / 2 * self.scale.x, -self.position.y + love.graphics.getHeight() / 2 * self.scale.y)
 	end
 
