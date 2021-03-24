@@ -1,6 +1,6 @@
 local world_factory = {}
 
-local cheat = true
+local cheat = false
 
 function world_factory.newWorld()
 	local world = {
